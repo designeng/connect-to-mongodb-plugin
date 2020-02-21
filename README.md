@@ -20,7 +20,7 @@ export default {
     }
 }
 ```
-
+Install wire from `git://github.com/cujojs/wire.git#0.10.11`
 main.js:
 ```
 import wire from 'wire';
