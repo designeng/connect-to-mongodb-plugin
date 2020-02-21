@@ -1,4 +1,6 @@
 ## MongoDb plugin for wire.js
+`npm i connect-to-mongodb-plugin`
+
 ```
 import { MongoClient } from 'mongodb';
 import connectToMongodbPlugin from 'connect-to-mongodb-plugin';
