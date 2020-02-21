@@ -1,0 +1,12 @@
+{
+  "name": "connect-to-mongodb-plugin",
+  "version": "0.0.1",
+  "description": "Wire.js plugin - connect to mongodb",
+  "author": "Denis Savenok <denissavenok@gmail.com> (http://designeng.github.io/)",
+  "main": "connectToMongodbPlugin.js",
+  "scripts": {
+
+  },
+  "keywords": [],
+  "license": "ISC"
+}
