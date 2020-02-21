@@ -21,11 +21,11 @@ function connectToMongodbPlugin() {
             MongoClient,
             logger
         }) => {
-            let additionalOptions = {
+            var additionalOptions = {
                 useUnifiedTopology: true
             };
 
-            let active = activeDatabases[url];
+            var active = activeDatabases[url];
 
             if(active) {
                 resolve(active);
