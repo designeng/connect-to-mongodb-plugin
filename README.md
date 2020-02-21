@@ -1,4 +1,6 @@
 ## MongoDb plugin for wire.js
+
+## Installation
 `npm i connect-to-mongodb-plugin`
 
 ## Usage
