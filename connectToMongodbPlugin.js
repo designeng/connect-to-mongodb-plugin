@@ -1,5 +1,3 @@
-const MONGO_PREFIX = 'mongodb://';
-
 function connectToMongodbPlugin() {
     var activeDatabases = {};
 
@@ -29,10 +27,6 @@ function connectToMongodbPlugin() {
             if(active) {
                 resolve(active);
             } else {
-                if(!url.match(new RegExp('^' + MONGO_PREFIX))) {
-                    url = MONGO_PREFIX + url;
-                }
-
                 const client = new MongoClient(url, Object.assign(options, additionalOptions));
 
                 client.on('close', () => {
