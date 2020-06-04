@@ -1,3 +1,5 @@
+const MongoClient = require('mongodb').MongoClient;
+
 function connectToMongodbPlugin() {
     var activeDatabases = {};
 
@@ -8,14 +10,13 @@ function connectToMongodbPlugin() {
         }))
     }
 
-    function connectToMongodb({ resolve, reject }, compDef, wire) {
+    function connectToDatabase({ resolve, reject }, compDef, wire) {
         wire(compDef.options).then(async ({
             url,
             dbName,
             user,
             password,
             options = {},
-            MongoClient,
             logger
         }) => {
             var additionalOptions = {
@@ -48,7 +49,7 @@ function connectToMongodbPlugin() {
 
     return {
         factories: {
-            connectToMongodb
+            connectToDatabase
         },
         context: {
             shutdown: (resolver, wire) => {
