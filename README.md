@@ -6,7 +6,6 @@
 ## Usage
 bootstrap.js:
 ```
-import { MongoClient } from 'mongodb';
 import connectToMongodbPlugin from 'connect-to-mongodb-plugin';
 
 export default {
@@ -15,9 +14,8 @@ export default {
     ],
 
     database: {
-        connectToMongodb: {
-            url: 'mongodb://localhost:27017/db_name?',
-            MongoClient
+        connectToDatabase: {
+            url: 'mongodb://localhost:27017/db_name'
         }
     }
 }
