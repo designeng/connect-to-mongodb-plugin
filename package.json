@@ -1,6 +1,6 @@
 {
   "name": "connect-to-mongodb-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wire.js plugin - connect to mongodb",
   "author": "Denis Savenok <denissavenok@gmail.com> (http://designeng.github.io/)",
   "main": "connectToMongodbPlugin.js",
@@ -16,5 +16,6 @@
     "chai": "^4.2.0",
     "mocha": "^7.2.0",
     "wire": "git://github.com/cujojs/wire.git#0.10.11"
-  }
+  },
+  "repository": "designeng/connect-to-mongodb-plugin"
 }
