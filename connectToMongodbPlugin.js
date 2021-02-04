@@ -19,15 +19,7 @@ function connectToMongodbPlugin() {
             options = {},
             logger
         }) => {
-            if(user && password) {
-                Object.assign(options, {
-                    auth: {
-                        user,
-                        password
-                    }
-                })
-            }
-            
+
             var additionalOptions = {
                 useUnifiedTopology: true
             };
