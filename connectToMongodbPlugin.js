@@ -32,7 +32,9 @@ function connectToMongodbPlugin() {
                 const client = new MongoClient(url, Object.assign(options, additionalOptions));
 
                 client.on('close', () => {
-                    if(logger && ('info' in logger)) logger.info(`CLOSED MONGODB CONNECTION: ${url}`)
+                    if(logger && ('info' in logger)) {
+                        logger.info(`CLOSED MONGODB CONNECTION: ${url.replace(/\/\/([^:]+):(.*)@/,"//$1:***@")}`)
+                    }
                 });
 
                 client.connect(function(error) {
